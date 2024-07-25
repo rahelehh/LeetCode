@@ -18,14 +18,19 @@ public class Main {
 //        RemoveElement_27 removeElement = new RemoveElement_27();
 //        System.out.println("****************** Remove Element ******************\n" + removeElement.removeElement(nums, val));
 
-        //**********************************Remove Duplicate From Sorted Array **********************************
+        //********************************** Remove Duplicate From Sorted Array **********************************
 //        int nums[] = {0,0,1,1,1,2,2,3,3,4};
 //        RemoveDuplicatesFromSortedArray_26 removeDuplicatesFromSortedArray = new RemoveDuplicatesFromSortedArray_26();
 //        System.out.println("****************** Remove Duplicate From Sorted Array ******************\n" + removeDuplicatesFromSortedArray.removeDuplicates(nums));
 
-        //**********************************Remove Duplicate From Sorted Array **********************************
-        int nums[] = {1,1,1,2,2,3};
-        RemoveDuplicatesFromSortedArrayII_80 removeDuplicatesFromSortedArrayII = new RemoveDuplicatesFromSortedArrayII_80();
-        System.out.println("****************** Remove Duplicate From Sorted Array ******************\n" + removeDuplicatesFromSortedArrayII.removeDuplicates(nums));
+        //********************************** Remove Duplicate From Sorted Array **********************************
+//        int nums[] = {1,1,1,2,2,3};
+//        RemoveDuplicatesFromSortedArrayII_80 removeDuplicatesFromSortedArrayII = new RemoveDuplicatesFromSortedArrayII_80();
+//        System.out.println("****************** Remove Duplicate From Sorted Array ******************\n" + removeDuplicatesFromSortedArrayII.removeDuplicates(nums));
+
+        //********************************** Majority Element **********************************
+        int nums[] = {2,2,3,5,6,2,2,3,6,2,2};
+        MajorityElement_169 majorityElement = new MajorityElement_169();
+        System.out.println("****************** Majority Element ******************\n" + majorityElement.majorityElement(nums));
     }
 }
