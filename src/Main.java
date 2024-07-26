@@ -34,13 +34,12 @@ public class Main {
 //        System.out.println("****************** Majority Element ******************\n" + majorityElement.majorityElement(nums));
 
         //********************************** Rotate Array **********************************
-        int nums[] = {1,2,3,4,5,6,7};
-        int k =4;
-        k = k%nums.length;
+        int[] nums = {1, 2, 3, 4, 5, 6, 7};
+        int k = 3;
         RotateArray_189 rotateArray = new RotateArray_189();
         System.out.println("****************** Rotate Array ******************\n");
-        rotateArray.rotate(nums,k);
-        for (int i=0;i<nums.length;i++) {
+        rotateArray.rotate(nums, k);
+        for (int i = 0; i < nums.length; i++) {
             System.out.println(nums[i]);
         }
     }
