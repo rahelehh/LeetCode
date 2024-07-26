@@ -44,9 +44,18 @@ public class Main {
 //        }
 
         //********************************** Best Time To Buy And Sell Stock **********************************
-        int[] prices = {7,1,5,3,6,4};
-        BestTimeToBuyAndSellStock_121 bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock_121();
-        System.out.println("****************** Best Time To Buy And Sell Stock ******************\n");
-        System.out.println(bestTimeToBuyAndSellStock.maxProfit(prices));
+//        int[] prices = {7,1,5,3,6,4};
+//        BestTimeToBuyAndSellStock_121 bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock_121();
+//        System.out.println("****************** Best Time To Buy And Sell Stock ******************\n");
+//        System.out.println(bestTimeToBuyAndSellStock.maxProfit(prices));
+
+
+        //********************************** Best Time To Buy And Sell Stock II **********************************
+//        int[] prices = {7,1,5,3,6,4};
+//        int[] prices = {1,2,3,4,5};
+        int[] prices = {6,1,3,2,4,7};
+        BestTimeToBuyAndSellStock_II_122 bestTimeToBuyAndSellStockII = new BestTimeToBuyAndSellStock_II_122();
+        System.out.println("****************** Best Time To Buy And Sell Stock II ******************\n");
+        System.out.println(bestTimeToBuyAndSellStockII.maxProfit(prices));
     }
 }
