@@ -1,5 +1,6 @@
 import arrays.BestTimeToBuyAndSellStock_II_122;
 import arrays.MergeSortedArray_88;
+import slidingWindow.MinimumSizeSubarraySum_209;
 import twoPointers.ValidPalindrome_125;
 
 public class Main {
@@ -64,10 +65,17 @@ public class Main {
 
 
         //********************************** Valid Palindrome **********************************
-        String s = "race a car";
-        ValidPalindrome_125 validPalindrome = new ValidPalindrome_125();
-        System.out.println("****************** Valid Palindrome ******************\n");
-        System.out.println(validPalindrome.isPalindrome(s));
+//        String s = "race a car";
+//        ValidPalindrome_125 validPalindrome = new ValidPalindrome_125();
+//        System.out.println("****************** Valid Palindrome ******************\n");
+//        System.out.println(validPalindrome.isPalindrome(s));
+
+        //********************************** Minimum Size Subarray Sum **********************************
+        int[] nums = {2, 3, 1, 2, 4, 3};
+        int target = 7;
+        MinimumSizeSubarraySum_209 minimumSizeSubarraySum = new MinimumSizeSubarraySum_209();
+        System.out.println("****************** Minimum Size Subarray Sum ******************\n");
+        System.out.println(minimumSizeSubarraySum.minSubArrayLen(target, nums));
 
 
     }
