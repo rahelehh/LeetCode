@@ -1,8 +1,10 @@
-import arrays.BestTimeToBuyAndSellStock_II_122;
 import arrays.MergeSortedArray_88;
 import slidingWindow.LongestSubstringWithoutRepeatingChars_3;
-import slidingWindow.MinimumSizeSubarraySum_209;
-import twoPointers.ValidPalindrome_125;
+import slidingWindow.SubStringWithConcatenationOfAllWords_30;
+import twoPointers.IsSubsequence_392;
+
+import java.util.Arrays;
+import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
@@ -81,10 +83,26 @@ public class Main {
 
 
         //********************************** Longest Substring Without Repeating Characters **********************************
-        String s = "abcabcbb";
-        LongestSubstringWithoutRepeatingChars_3 longestSubstringWithoutRepeatingChars = new LongestSubstringWithoutRepeatingChars_3();
-        System.out.println("****************** Longest Substring Without Repeating Characters ******************\n");
-        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring2(s));
+//        String s = "abcabcbb";
+//        LongestSubstringWithoutRepeatingChars_3 longestSubstringWithoutRepeatingChars = new LongestSubstringWithoutRepeatingChars_3();
+//        System.out.println("****************** Longest Substring Without Repeating Characters ******************\n");
+//        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring2(s));
+
+
+        //********************************** SubString With Concatenation Of All Words **********************************
+//        String s = "wordgoodgoodgoodbestword";
+//        String[] words = {"word","good","best","good"};
+//        SubStringWithConcatenationOfAllWords_30 subStringWithConcatenationOfAllWords = new SubStringWithConcatenationOfAllWords_30();
+//        System.out.println("****************** SubString With Concatenation Of All Words ******************\n");
+//        System.out.println(subStringWithConcatenationOfAllWords.findSubstring(s,words));
+//
+
+        //********************************** Is Subsequence **********************************
+        String s = "axc";
+        String t = "ahbgdc";
+        IsSubsequence_392 isSubsequence = new IsSubsequence_392();
+        System.out.println("****************** Is Subsequence ******************\n");
+        System.out.println(isSubsequence.isSubsequence(s,t));
 
     }
 }
