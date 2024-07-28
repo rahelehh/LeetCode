@@ -1,4 +1,5 @@
 import arrays.MergeSortedArray_88;
+import hashmap.TwoSum_1;
 import slidingWindow.LongestSubstringWithoutRepeatingChars_3;
 import slidingWindow.SubStringWithConcatenationOfAllWords_30;
 import twoPointers.IsSubsequence_392;
@@ -98,11 +99,19 @@ public class Main {
 //
 
         //********************************** Is Subsequence **********************************
-        String s = "axc";
-        String t = "ahbgdc";
-        IsSubsequence_392 isSubsequence = new IsSubsequence_392();
-        System.out.println("****************** Is Subsequence ******************\n");
-        System.out.println(isSubsequence.isSubsequence(s,t));
+//        String s = "axc";
+//        String t = "ahbgdc";
+//        IsSubsequence_392 isSubsequence = new IsSubsequence_392();
+//        System.out.println("****************** Is Subsequence ******************\n");
+//        System.out.println(isSubsequence.isSubsequence(s,t));
+
+
+        //********************************** Two Sum **********************************
+        int []nums = {2,7,11,15};
+        int target = 6;
+        TwoSum_1 twoSum = new TwoSum_1();
+        System.out.println("****************** Two Sum ******************\n");
+        System.out.println(twoSum.twoSum_hashmap(nums,target));
 
     }
 }
