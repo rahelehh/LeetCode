@@ -1,5 +1,6 @@
 import arrays.BestTimeToBuyAndSellStock_II_122;
 import arrays.MergeSortedArray_88;
+import slidingWindow.LongestSubstringWithoutRepeatingChars_3;
 import slidingWindow.MinimumSizeSubarraySum_209;
 import twoPointers.ValidPalindrome_125;
 
@@ -71,12 +72,19 @@ public class Main {
 //        System.out.println(validPalindrome.isPalindrome(s));
 
         //********************************** Minimum Size Subarray Sum **********************************
-        int[] nums = {2, 3, 1, 2, 4, 3};
-        int target = 7;
-        MinimumSizeSubarraySum_209 minimumSizeSubarraySum = new MinimumSizeSubarraySum_209();
-        System.out.println("****************** Minimum Size Subarray Sum ******************\n");
-        System.out.println(minimumSizeSubarraySum.minSubArrayLen(target, nums));
+//        int[] nums = {2, 3, 1, 2, 4, 3};
+//        int target = 7;
+//        MinimumSizeSubarraySum_209 minimumSizeSubarraySum = new MinimumSizeSubarraySum_209();
+//        System.out.println("****************** Minimum Size Subarray Sum ******************\n");
+//        System.out.println(minimumSizeSubarraySum.minSubArrayLen(target, nums));
 
+
+
+        //********************************** Longest Substring Without Repeating Characters **********************************
+        String s = "abcabcbb";
+        LongestSubstringWithoutRepeatingChars_3 longestSubstringWithoutRepeatingChars = new LongestSubstringWithoutRepeatingChars_3();
+        System.out.println("****************** Longest Substring Without Repeating Characters ******************\n");
+        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring2(s));
 
     }
 }
