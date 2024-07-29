@@ -3,6 +3,7 @@ import hashmap.TwoSum_1;
 import slidingWindow.LongestSubstringWithoutRepeatingChars_3;
 import slidingWindow.SubStringWithConcatenationOfAllWords_30;
 import twoPointers.IsSubsequence_392;
+import twoPointers.ThreeSum_15;
 import twoPointers.TwoSumII_167;
 
 import java.util.Arrays;
@@ -117,13 +118,23 @@ public class Main {
 
 
         //********************************** Two Sum II **********************************
-        int []nums = {2,7,11,15};
-        int target = 9;
-        TwoSumII_167 twoSum = new TwoSumII_167();
-        System.out.println("****************** Two Sum II ******************\n");
-        int [] twoSumOutput = twoSum.twoSum(nums,target);
-        for (int i : twoSumOutput) {
-            System.out.println(i);
+//        int []nums = {2,7,11,15};
+//        int target = 9;
+//        TwoSumII_167 twoSum = new TwoSumII_167();
+//        System.out.println("****************** Two Sum II ******************\n");
+//        int [] twoSumOutput = twoSum.twoSum(nums,target);
+//        for (int i : twoSumOutput) {
+//            System.out.println(i);
+//        }
+
+
+        //********************************** 3 Sum **********************************
+        int []nums = {18, -2, -4 , 0,7,11,15};
+        ThreeSum_15 threeSum = new ThreeSum_15();
+        System.out.println("****************** 3 Sum ******************\n");
+        Arrays.sort(nums);
+        for (int num : nums) {
+            System.out.println(num);
         }
 
     }
