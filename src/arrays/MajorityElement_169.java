@@ -1,3 +1,5 @@
+package arrays;
+
 public class MajorityElement_169 {
     public int majorityElement(int[] nums) {
         int majorityElement = nums[0];

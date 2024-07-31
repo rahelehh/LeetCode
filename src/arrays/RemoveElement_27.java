@@ -1,3 +1,5 @@
+package arrays;
+
 public class RemoveElement_27 {
     public int removeElement(int[] nums, int val) {
         int k = 0;

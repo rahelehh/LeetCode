@@ -1,3 +1,5 @@
+package arrays;
+
 public class RemoveDuplicatesFromSortedArrayII_80 {
     public int removeDuplicates(int[] nums) {
         int k = 2;

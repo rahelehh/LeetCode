@@ -1,3 +1,5 @@
+package arrays;
+
 public class MergeSortedArray_88 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
 
