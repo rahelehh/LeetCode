@@ -1,5 +1,6 @@
 import arrays.MergeSortedArray_88;
 import hashmap.TwoSum_1;
+import matrix.ValidSudoku_36;
 import slidingWindow.LongestSubstringWithoutRepeatingChars_3;
 import slidingWindow.SubStringWithConcatenationOfAllWords_30;
 import twoPointers.IsSubsequence_392;
@@ -129,13 +130,31 @@ public class Main {
 
 
         //********************************** 3 Sum **********************************
-        int []nums = {18, -2, -4 , 0,7,11,15};
-        ThreeSum_15 threeSum = new ThreeSum_15();
-        System.out.println("****************** 3 Sum ******************\n");
-        Arrays.sort(nums);
-        for (int num : nums) {
-            System.out.println(num);
-        }
+//        int []nums = {18, -2, -4 , 0,7,11,15};
+//        ThreeSum_15 threeSum = new ThreeSum_15();
+//        System.out.println("****************** 3 Sum ******************\n");
+//        Arrays.sort(nums);
+//        for (int num : nums) {
+//            System.out.println(num);
+//        }
 
+
+
+
+        //********************************** Validate Sudoku **********************************
+        char [][]board ={
+                {'5','3','.','.','7','.','.','.','.'}
+                ,{'6','.','.','1','9','5','.','.','.'}
+                ,{'.','9','8','.','.','.','.','6','.'}
+                ,{'8','.','.','.','6','.','.','.','3'}
+                ,{'4','.','.','8','.','3','.','.','1'}
+                ,{'7','.','.','.','2','.','.','.','6'}
+                ,{'.','6','.','.','.','.','2','8','.'}
+                ,{'.','.','.','4','1','9','.','.','5'}
+                ,{'.','.','.','.','8','.','.','7','9'}};
+
+        ValidSudoku_36 validSudoku = new ValidSudoku_36();
+        System.out.println("****************** Validate Sudoku ******************\n");
+        System.out.println(validSudoku.isValidSudoku(board));
     }
 }
