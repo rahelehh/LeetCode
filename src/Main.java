@@ -1,5 +1,7 @@
+import arrays.FindTheIndexOfFirstOccuranceOfString_28;
 import arrays.MergeSortedArray_88;
 import hashmap.TwoSum_1;
+import matrix.SprialMatrix_54;
 import matrix.ValidSudoku_36;
 import slidingWindow.LongestSubstringWithoutRepeatingChars_3;
 import slidingWindow.SubStringWithConcatenationOfAllWords_30;
@@ -85,7 +87,6 @@ public class Main {
 //        System.out.println(minimumSizeSubarraySum.minSubArrayLen(target, nums));
 
 
-
         //********************************** Longest Substring Without Repeating Characters **********************************
 //        String s = "abcabcbb";
 //        LongestSubstringWithoutRepeatingChars_3 longestSubstringWithoutRepeatingChars = new LongestSubstringWithoutRepeatingChars_3();
@@ -117,7 +118,6 @@ public class Main {
 //        System.out.println(twoSum.twoSum_hashmap(nums,target));
 
 
-
         //********************************** Two Sum II **********************************
 //        int []nums = {2,7,11,15};
 //        int target = 9;
@@ -139,22 +139,38 @@ public class Main {
 //        }
 
 
-
-
         //********************************** Validate Sudoku **********************************
-        char [][]board ={
-                {'5','3','.','.','7','.','.','.','.'}
-                ,{'6','.','.','1','9','5','.','.','.'}
-                ,{'.','9','8','.','.','.','.','6','.'}
-                ,{'8','.','.','.','6','.','.','.','3'}
-                ,{'4','.','.','8','.','3','.','.','1'}
-                ,{'7','.','.','.','2','.','.','.','6'}
-                ,{'.','6','.','.','.','.','2','8','.'}
-                ,{'.','.','.','4','1','9','.','.','5'}
-                ,{'.','.','.','.','8','.','.','7','9'}};
+//        char [][]board ={
+//                {'5','3','.','.','7','.','.','.','.'}
+//                ,{'6','.','.','1','9','5','.','.','.'}
+//                ,{'.','9','8','.','.','.','.','6','.'}
+//                ,{'8','.','.','.','6','.','.','.','3'}
+//                ,{'4','.','.','8','.','3','.','.','1'}
+//                ,{'7','.','.','.','2','.','.','.','6'}
+//                ,{'.','6','.','.','.','.','2','8','.'}
+//                ,{'.','.','.','4','1','9','.','.','5'}
+//                ,{'.','.','.','.','8','.','.','7','9'}};
+//
+//
+//        ValidSudoku_36 validSudoku = new ValidSudoku_36();
+//        System.out.println("****************** Validate Sudoku ******************\n");
+//        System.out.println(validSudoku.isValidSudoku(board));
 
-        ValidSudoku_36 validSudoku = new ValidSudoku_36();
-        System.out.println("****************** Validate Sudoku ******************\n");
-        System.out.println(validSudoku.isValidSudoku(board));
+
+        //********************************** Sprial Matrix**********************************
+//        int [][]matrix ={{1,2,3,4,5}, {6,7,8,9,10},{11,12,13,14,15}};
+//
+//
+//        SprialMatrix_54 sprialMatrix = new SprialMatrix_54();
+//        System.out.println("****************** Sprial Matrix ******************\n");
+//        System.out.println(sprialMatrix.spiralOrder(matrix));
+
+        //********************************** Find the Index of the First Occurrence in a String **********************************
+        String haystack = "asadbutsad", needle = "sad";
+        FindTheIndexOfFirstOccuranceOfString_28 occurance = new FindTheIndexOfFirstOccuranceOfString_28();
+        System.out.println("****************** Find the Index of the First Occurrence in a String ******************\n");
+        System.out.println(occurance.strStr(haystack, needle));
+
+
     }
 }
