@@ -1,5 +1,4 @@
-import arrays.FindTheIndexOfFirstOccuranceOfString_28;
-import arrays.MergeSortedArray_88;
+import arrays.*;
 import hashmap.TwoSum_1;
 import matrix.SprialMatrix_54;
 import matrix.ValidSudoku_36;
@@ -159,18 +158,36 @@ public class Main {
 
         //********************************** Sprial Matrix**********************************
 //        int [][]matrix ={{1,2,3,4,5}, {6,7,8,9,10},{11,12,13,14,15}};
-//
-//
 //        SprialMatrix_54 sprialMatrix = new SprialMatrix_54();
 //        System.out.println("****************** Sprial Matrix ******************\n");
 //        System.out.println(sprialMatrix.spiralOrder(matrix));
 
+
         //********************************** Find the Index of the First Occurrence in a String **********************************
-        String haystack = "asadbutsad", needle = "sad";
-        FindTheIndexOfFirstOccuranceOfString_28 occurance = new FindTheIndexOfFirstOccuranceOfString_28();
-        System.out.println("****************** Find the Index of the First Occurrence in a String ******************\n");
-        System.out.println(occurance.strStr(haystack, needle));
+//        String haystack = "asadbutsad", needle = "sad";
+//        FindTheIndexOfFirstOccuranceOfString_28 occurance = new FindTheIndexOfFirstOccuranceOfString_28();
+//        System.out.println("****************** Find the Index of the First Occurrence in a String ******************\n");
+//        System.out.println(occurance.strStr(haystack, needle));
 
 
+        //********************************** Zigzag Conversion **********************************
+//        String s = "ABC";
+//        int numRows = 2;
+//        ZigzagConversion_6 zigzagConversion = new ZigzagConversion_6();
+//        System.out.println("******************  Zigzag Conversion ******************\n");
+//        System.out.println(zigzagConversion.convert(s, numRows));
+
+
+        //********************************** Jump Game **********************************
+//        int[] nums={1,1,2,2,0,1,1};
+//        JumpGame_55 jumpGame55 = new JumpGame_55();
+//        System.out.println("******************  Jump Game ******************\n");
+//        System.out.println(jumpGame55.canJump(nums));
+
+        //********************************** Roman To Integer **********************************
+        String s = "CMXCVIII";
+        RomanToInteger_13 romanToInteger13 = new RomanToInteger_13();
+        System.out.println("******************  Roman To Integer ******************\n");
+        System.out.println(romanToInteger13.romanToInt(s));
     }
 }
