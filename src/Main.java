@@ -185,9 +185,24 @@ public class Main {
 //        System.out.println(jumpGame55.canJump(nums));
 
         //********************************** Roman To Integer **********************************
-        String s = "CMXCVIII";
-        RomanToInteger_13 romanToInteger13 = new RomanToInteger_13();
-        System.out.println("******************  Roman To Integer ******************\n");
-        System.out.println(romanToInteger13.romanToInt(s));
+//        String s = "CMXCVIII";
+//        RomanToInteger_13 romanToInteger13 = new RomanToInteger_13();
+//        System.out.println("******************  Roman To Integer ******************\n");
+//        System.out.println(romanToInteger13.romanToInt(s));
+
+        //********************************** Merge Intervals **********************************
+//        int[][] intervals = {{1,3},{2,6},{8,10},{15,18}};
+//        MergeIntervals_56 mergeIntervals56 = new MergeIntervals_56();
+//        System.out.println("******************  Merge Intervals ******************\n");
+//        System.out.println(mergeIntervals56.merge(intervals));
+
+
+        //********************************** Integer To Roman **********************************
+        int num = 3749;
+        IntegerToRoman_12 integerToRoman = new IntegerToRoman_12();
+        System.out.println("****************** Integer To Roman ******************\n");
+        System.out.println(integerToRoman.intToRoman(num));
+
+
     }
 }
