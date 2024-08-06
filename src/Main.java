@@ -1,4 +1,5 @@
 import arrays.*;
+import hashmap.LongestConsecutiveSequence_128;
 import hashmap.TwoSum_1;
 import matrix.SprialMatrix_54;
 import matrix.ValidSudoku_36;
@@ -8,8 +9,8 @@ import twoPointers.IsSubsequence_392;
 import twoPointers.ThreeSum_15;
 import twoPointers.TwoSumII_167;
 
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -198,10 +199,17 @@ public class Main {
 
 
         //********************************** Integer To Roman **********************************
-        int num = 3749;
-        IntegerToRoman_12 integerToRoman = new IntegerToRoman_12();
-        System.out.println("****************** Integer To Roman ******************\n");
-        System.out.println(integerToRoman.intToRoman(num));
+//        int num = 3749;
+//        IntegerToRoman_12 integerToRoman = new IntegerToRoman_12();
+//        System.out.println("****************** Integer To Roman ******************\n");
+//        System.out.println(integerToRoman.intToRoman(num));
+
+
+        //********************************** Longest Consecutive Sequence **********************************
+        int []nums = {0,3,7,2,5,8,4,6,0,1};
+        LongestConsecutiveSequence_128 longestConsecutiveSequence = new LongestConsecutiveSequence_128();
+        System.out.println("******************  Longest Consecutive Sequence ******************\n");
+        System.out.println(longestConsecutiveSequence.longestConsecutive(nums));
 
 
     }
