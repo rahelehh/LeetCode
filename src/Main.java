@@ -1,4 +1,5 @@
 import arrays.*;
+import hashmap.HappyNumber_202;
 import hashmap.LongestConsecutiveSequence_128;
 import hashmap.TwoSum_1;
 import matrix.SprialMatrix_54;
@@ -206,10 +207,17 @@ public class Main {
 
 
         //********************************** Longest Consecutive Sequence **********************************
-        int []nums = {0,3,7,2,5,8,4,6,0,1};
-        LongestConsecutiveSequence_128 longestConsecutiveSequence = new LongestConsecutiveSequence_128();
-        System.out.println("******************  Longest Consecutive Sequence ******************\n");
-        System.out.println(longestConsecutiveSequence.longestConsecutive(nums));
+//        int []nums = {0,3,7,2,5,8,4,6,0,1};
+//        LongestConsecutiveSequence_128 longestConsecutiveSequence = new LongestConsecutiveSequence_128();
+//        System.out.println("******************  Longest Consecutive Sequence ******************\n");
+//        System.out.println(longestConsecutiveSequence.longestConsecutive(nums));
+
+
+        //********************************** Happy Number **********************************
+        int num = 2;
+        HappyNumber_202 happyNumber = new HappyNumber_202();
+        System.out.println("******************  Happy Number ******************\n");
+        System.out.println(happyNumber.isHappy(num));
 
 
     }
