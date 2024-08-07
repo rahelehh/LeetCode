@@ -1,6 +1,7 @@
 import arrays.*;
 import hashmap.HappyNumber_202;
 import hashmap.LongestConsecutiveSequence_128;
+import hashmap.RansomNote_383;
 import hashmap.TwoSum_1;
 import matrix.SprialMatrix_54;
 import matrix.ValidSudoku_36;
@@ -214,11 +215,18 @@ public class Main {
 
 
         //********************************** Happy Number **********************************
-        int num = 2;
-        HappyNumber_202 happyNumber = new HappyNumber_202();
-        System.out.println("******************  Happy Number ******************\n");
-        System.out.println(happyNumber.isHappy(num));
+//        int num = 2;
+//        HappyNumber_202 happyNumber = new HappyNumber_202();
+//        System.out.println("******************  Happy Number ******************\n");
+//        System.out.println(happyNumber.isHappy(num));
 
+
+        //********************************** Ransom Note **********************************
+        String ransomNoteStr="fihjjjjei";
+        String magazine="hjibagacbhadfaefdjaeaebgi";
+        RansomNote_383 ransomNote = new RansomNote_383();
+        System.out.println("****************** Ransom Note ******************\n");
+        System.out.println(ransomNote.canConstruct(ransomNoteStr,magazine));
 
     }
 }
