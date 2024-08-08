@@ -1,18 +1,7 @@
 import arrays.*;
-import hashmap.HappyNumber_202;
-import hashmap.LongestConsecutiveSequence_128;
-import hashmap.RansomNote_383;
-import hashmap.TwoSum_1;
-import matrix.SprialMatrix_54;
-import matrix.ValidSudoku_36;
-import slidingWindow.LongestSubstringWithoutRepeatingChars_3;
-import slidingWindow.SubStringWithConcatenationOfAllWords_30;
-import twoPointers.IsSubsequence_392;
-import twoPointers.ThreeSum_15;
-import twoPointers.TwoSumII_167;
+import hashmap.*;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -222,11 +211,40 @@ public class Main {
 
 
         //********************************** Ransom Note **********************************
-        String ransomNoteStr="fihjjjjei";
-        String magazine="hjibagacbhadfaefdjaeaebgi";
-        RansomNote_383 ransomNote = new RansomNote_383();
-        System.out.println("****************** Ransom Note ******************\n");
-        System.out.println(ransomNote.canConstruct(ransomNoteStr,magazine));
+//        String ransomNoteStr="fihjjjjei";
+//        String magazine="hjibagacbhadfaefdjaeaebgi";
+//        RansomNote_383 ransomNote = new RansomNote_383();
+//        System.out.println("****************** Ransom Note ******************\n");
+//        System.out.println(ransomNote.canConstruct(ransomNoteStr,magazine));
+
+        //********************************** Isomorphic String **********************************
+//        String s="badc";
+//        String t="baba";
+//        IsomorphicString_205 isomorphicString = new IsomorphicString_205();
+//        System.out.println("****************** Isomorphic String  ******************\n");
+//        System.out.println(isomorphicString.isIsomorphic(s,t));
+
+        //********************************** Valid Parantheses **********************************
+//        String s=")(){}";
+//        ValidParantheses_20 validParantheses = new ValidParantheses_20();
+//        System.out.println("****************** Valid Parantheses ******************\n");
+//        System.out.println(validParantheses.isValid(s));
+
+
+        //********************************** Valid Anagram **********************************
+        String s="anagram";
+        String t="agranam";
+        ValidAnagram_242 validAnagram = new ValidAnagram_242();
+        System.out.println("****************** Valid Anagram ******************\n");
+        System.out.println(validAnagram.isAnagram(s,t));
+
+
+        //********************************** Group Anagram **********************************
+//        String[] s= {"abets","bead","remain","betas","abed","baste","airline","leading","beast","dealing","beats","airmen","marine","single","bade","aligned"};
+//        GroupAnagram_49 groupAnagram = new GroupAnagram_49();
+//        System.out.println("****************** Group Anagram ******************\n");
+//        System.out.println(groupAnagram.groupAnagrams(s));
+
 
     }
 }
