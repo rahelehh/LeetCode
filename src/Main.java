@@ -232,11 +232,11 @@ public class Main {
 
 
         //********************************** Valid Anagram **********************************
-        String s="anagram";
-        String t="agranam";
-        ValidAnagram_242 validAnagram = new ValidAnagram_242();
-        System.out.println("****************** Valid Anagram ******************\n");
-        System.out.println(validAnagram.isAnagram(s,t));
+//        String s="anagram";
+//        String t="agranam";
+//        ValidAnagram_242 validAnagram = new ValidAnagram_242();
+//        System.out.println("****************** Valid Anagram ******************\n");
+//        System.out.println(validAnagram.isAnagram(s,t));
 
 
         //********************************** Group Anagram **********************************
@@ -246,5 +246,11 @@ public class Main {
 //        System.out.println(groupAnagram.groupAnagrams(s));
 
 
+        //********************************** Word Pattern **********************************
+        String pattern = "abba";
+        String s = "dog dog dog dog";
+        WordPattern_290 wordPattern = new WordPattern_290();
+        System.out.println("****************** Word Pattern ******************\n");
+        System.out.println(wordPattern.wordPattern(pattern,s));
     }
 }
