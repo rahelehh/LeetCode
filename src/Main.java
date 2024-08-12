@@ -247,10 +247,16 @@ public class Main {
 
 
         //********************************** Word Pattern **********************************
-        String pattern = "abba";
-        String s = "dog dog dog dog";
-        WordPattern_290 wordPattern = new WordPattern_290();
-        System.out.println("****************** Word Pattern ******************\n");
-        System.out.println(wordPattern.wordPattern(pattern,s));
+//        String pattern = "abba";
+//        String s = "dog dog dog dog";
+//        WordPattern_290 wordPattern = new WordPattern_290();
+//        System.out.println("****************** Word Pattern ******************\n");
+//        System.out.println(wordPattern.wordPattern(pattern,s));
+
+        //********************************** Length of Last Word **********************************
+        String s = "Hello World";
+        LengthOfLastWord_58 lengthOfLastWord = new LengthOfLastWord_58();
+        System.out.println("****************** Length of Last Word ******************\n");
+        System.out.println(lengthOfLastWord.lengthOfLastWord(s));
     }
 }
