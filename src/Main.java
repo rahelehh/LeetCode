@@ -1,7 +1,11 @@
 import arrays.*;
 import hashmap.*;
+import intervals.SummaryRanges_228;
+import linklist.MergeTwoSortedList_21;
+import linklist.MergeTwoSortedList_21.*;
 
 import java.util.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -254,9 +258,39 @@ public class Main {
 //        System.out.println(wordPattern.wordPattern(pattern,s));
 
         //********************************** Length of Last Word **********************************
-        String s = "Hello World";
-        LengthOfLastWord_58 lengthOfLastWord = new LengthOfLastWord_58();
-        System.out.println("****************** Length of Last Word ******************\n");
-        System.out.println(lengthOfLastWord.lengthOfLastWord(s));
+//        String s = "Hello World";
+//        LengthOfLastWord_58 lengthOfLastWord = new LengthOfLastWord_58();
+//        System.out.println("****************** Length of Last Word ******************\n");
+//        System.out.println(lengthOfLastWord.lengthOfLastWord(s));
+
+
+        //********************************** Longest Common Prefix **********************************
+//        String[] s = {"dog","racecar","car"};
+//        LongestCommonPrefix_14 longestCommonPrefix = new LongestCommonPrefix_14();
+//        System.out.println("****************** Longest Common Prefix ******************\n");
+//        System.out.println(longestCommonPrefix.longestCommonPrefix(s));
+
+
+        //********************************** Merge Two Sorted List **********************************
+//        ListNode n1=new ListNode(1, new ListNode());
+//        ListNode n2=new ListNode(2,n1);
+//        ListNode n3=new ListNode(4,n2);
+//        ListNode list1 = n1;
+//
+//        ListNode n4=new ListNode(1, new ListNode());
+//        ListNode n5=new ListNode(2,n1);
+//        ListNode n6=new ListNode(4,n2);
+//        ListNode list2 = n4;
+//
+//        MergeTwoSortedList_21 mergeTwoSortedList = new MergeTwoSortedList_21();
+//        System.out.println("****************** Merge Two Sorted List ******************\n");
+//        mergeTwoSortedList.mergeTwoLists(list1,list2);
+
+
+        //********************************** Summary Ranges **********************************
+        int[] nums = {0,1,2,4,5,7};
+        SummaryRanges_228 summaryRanges = new SummaryRanges_228();
+        System.out.println("****************** Summary Ranges ******************\n");
+        System.out.println(summaryRanges.summaryRanges(nums));
     }
 }
