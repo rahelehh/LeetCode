@@ -1,4 +1,5 @@
 import arrays.*;
+import binarytree.InvertBinaryTree_226;
 import binarytree.MaximumDepthOfBinaryTree_104;
 import binarytree.SameTree_100;
 import hashmap.*;
@@ -315,23 +316,42 @@ public class Main {
 
 
         //********************************** Same Tree **********************************
-        SameTree_100.TreeNode left_p = new SameTree_100.TreeNode(2, null, null);
-        SameTree_100.TreeNode right_p = new SameTree_100.TreeNode(3, null, null);
-        SameTree_100.TreeNode p = new SameTree_100.TreeNode(1, left_p, right_p);
-
-        SameTree_100.TreeNode left_q = new SameTree_100.TreeNode(2, null, null);
-        SameTree_100.TreeNode right_q = new SameTree_100.TreeNode(3, null, null);
-        SameTree_100.TreeNode q = new SameTree_100.TreeNode(1, left_q, right_q);
-
-
 //        SameTree_100.TreeNode left_p = new SameTree_100.TreeNode(2, null, null);
-//        SameTree_100.TreeNode p = new SameTree_100.TreeNode(1, left_p, null);
+//        SameTree_100.TreeNode right_p = new SameTree_100.TreeNode(3, null, null);
+//        SameTree_100.TreeNode p = new SameTree_100.TreeNode(1, left_p, right_p);
 //
-//        SameTree_100.TreeNode right_q = new SameTree_100.TreeNode(2, null, null);
-//        SameTree_100.TreeNode q = new SameTree_100.TreeNode(1, null, right_q);
+//        SameTree_100.TreeNode left_q = new SameTree_100.TreeNode(2, null, null);
+//        SameTree_100.TreeNode right_q = new SameTree_100.TreeNode(3, null, null);
+//        SameTree_100.TreeNode q = new SameTree_100.TreeNode(1, left_q, right_q);
+//
+//
+////        SameTree_100.TreeNode left_p = new SameTree_100.TreeNode(2, null, null);
+////        SameTree_100.TreeNode p = new SameTree_100.TreeNode(1, left_p, null);
+////
+////        SameTree_100.TreeNode right_q = new SameTree_100.TreeNode(2, null, null);
+////        SameTree_100.TreeNode q = new SameTree_100.TreeNode(1, null, right_q);
+//
+//        SameTree_100 sameTree = new SameTree_100();
+//        System.out.println("****************** Same Tree ******************\n");
+//        System.out.println(sameTree.isSameTree_DFS(p, q));
 
-        SameTree_100 sameTree = new SameTree_100();
-        System.out.println("****************** Same Tree ******************\n");
-        System.out.println(sameTree.isSameTree_DFS(p, q));
+
+
+        //********************************** Invert Binary Tree **********************************
+        InvertBinaryTree_226.TreeNode child_left_left = new InvertBinaryTree_226.TreeNode(1, null, null);
+        InvertBinaryTree_226.TreeNode child_left_right = new InvertBinaryTree_226.TreeNode(3, null, null);
+
+        InvertBinaryTree_226.TreeNode child_right_left = new InvertBinaryTree_226.TreeNode(6, null, null);
+        InvertBinaryTree_226.TreeNode child_right_right = new InvertBinaryTree_226.TreeNode(9, null, null);
+
+        InvertBinaryTree_226.TreeNode left = new InvertBinaryTree_226.TreeNode(2, child_left_left, child_left_right);
+        InvertBinaryTree_226.TreeNode right = new InvertBinaryTree_226.TreeNode(7, child_right_left, child_right_right);
+
+        InvertBinaryTree_226.TreeNode root = new InvertBinaryTree_226.TreeNode(4, left,right);
+        InvertBinaryTree_226 invertBinaryTree = new InvertBinaryTree_226();
+        System.out.println("****************** Invert Binary Tree ******************\n");
+        System.out.println(invertBinaryTree.invertTree(root));
+
+
     }
 }
