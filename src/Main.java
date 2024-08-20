@@ -1,9 +1,12 @@
 import arrays.*;
+import binarytree.MaximumDepthOfBinaryTree_104;
 import hashmap.*;
 import intervals.SummaryRanges_228;
 import linklist.MergeTwoSortedList_21;
 import linklist.MergeTwoSortedList_21.*;
+import org.w3c.dom.css.CSSMediaRule;
 
+import java.security.KeyPair;
 import java.util.*;
 
 
@@ -288,9 +291,25 @@ public class Main {
 
 
         //********************************** Summary Ranges **********************************
-        int[] nums = {0,1,2,4,5,7};
-        SummaryRanges_228 summaryRanges = new SummaryRanges_228();
-        System.out.println("****************** Summary Ranges ******************\n");
-        System.out.println(summaryRanges.summaryRanges(nums));
+//        int[] nums = {0,1,2,4,5,7};
+//        SummaryRanges_228 summaryRanges = new SummaryRanges_228();
+//        System.out.println("****************** Summary Ranges ******************\n");
+//        System.out.println(summaryRanges.summaryRanges(nums));
+
+        //********************************** Merge Intervals **********************************
+//        int[][] intervals = {{1,4},{0,0}};
+//        MergeIntervals_56 mergeIntervals = new MergeIntervals_56();
+//        System.out.println("****************** Merge Intervals ******************\n");
+//        System.out.println(mergeIntervals.merge(intervals));
+
+        //********************************** Maximum Depth Of Binary Tree **********************************
+        MaximumDepthOfBinaryTree_104.TreeNode child_right_left = new MaximumDepthOfBinaryTree_104.TreeNode(15, null, null);
+        MaximumDepthOfBinaryTree_104.TreeNode child_right_right = new MaximumDepthOfBinaryTree_104.TreeNode(7, null, null);
+        MaximumDepthOfBinaryTree_104.TreeNode left = new MaximumDepthOfBinaryTree_104.TreeNode(9, null, null);
+        MaximumDepthOfBinaryTree_104.TreeNode right = new MaximumDepthOfBinaryTree_104.TreeNode(20, child_right_left, child_right_right);
+        MaximumDepthOfBinaryTree_104.TreeNode root = new MaximumDepthOfBinaryTree_104.TreeNode(3, left,right);
+        MaximumDepthOfBinaryTree_104 maximumDepthOfBinaryTree = new MaximumDepthOfBinaryTree_104();
+        System.out.println("****************** Maximum Depth Of Binary Tree ******************\n");
+        System.out.println(maximumDepthOfBinaryTree.maxDepth_DFS(root));
     }
 }
