@@ -2,6 +2,7 @@ import arrays.*;
 import binarytree.InvertBinaryTree_226;
 import binarytree.MaximumDepthOfBinaryTree_104;
 import binarytree.SameTree_100;
+import binarytree.SymmetricTree_101;
 import hashmap.*;
 import intervals.SummaryRanges_228;
 import linklist.MergeTwoSortedList_21;
@@ -338,19 +339,46 @@ public class Main {
 
 
         //********************************** Invert Binary Tree **********************************
-        InvertBinaryTree_226.TreeNode child_left_left = new InvertBinaryTree_226.TreeNode(1, null, null);
-        InvertBinaryTree_226.TreeNode child_left_right = new InvertBinaryTree_226.TreeNode(3, null, null);
+//        InvertBinaryTree_226.TreeNode child_left_left = new InvertBinaryTree_226.TreeNode(1, null, null);
+//        InvertBinaryTree_226.TreeNode child_left_right = new InvertBinaryTree_226.TreeNode(3, null, null);
+//
+//        InvertBinaryTree_226.TreeNode child_right_left = new InvertBinaryTree_226.TreeNode(6, null, null);
+//        InvertBinaryTree_226.TreeNode child_right_right = new InvertBinaryTree_226.TreeNode(9, null, null);
+//
+//        InvertBinaryTree_226.TreeNode left = new InvertBinaryTree_226.TreeNode(2, child_left_left, child_left_right);
+//        InvertBinaryTree_226.TreeNode right = new InvertBinaryTree_226.TreeNode(7, child_right_left, child_right_right);
+//
+//        InvertBinaryTree_226.TreeNode root = new InvertBinaryTree_226.TreeNode(4, left,right);
+//        InvertBinaryTree_226 invertBinaryTree = new InvertBinaryTree_226();
+//        System.out.println("****************** Invert Binary Tree ******************\n");
+//        System.out.println(invertBinaryTree.invertTree(root));
 
-        InvertBinaryTree_226.TreeNode child_right_left = new InvertBinaryTree_226.TreeNode(6, null, null);
-        InvertBinaryTree_226.TreeNode child_right_right = new InvertBinaryTree_226.TreeNode(9, null, null);
 
-        InvertBinaryTree_226.TreeNode left = new InvertBinaryTree_226.TreeNode(2, child_left_left, child_left_right);
-        InvertBinaryTree_226.TreeNode right = new InvertBinaryTree_226.TreeNode(7, child_right_left, child_right_right);
+        //********************************** Symmetric Tree **********************************
+//        SymmetricTree_101.TreeNode child_left_left = new SymmetricTree_101.TreeNode(3, null, null);
+//        SymmetricTree_101.TreeNode child_left_right = new SymmetricTree_101.TreeNode(4, null, null);
+//
+//        SymmetricTree_101.TreeNode child_right_left = new SymmetricTree_101.TreeNode(4, null, null);
+//        SymmetricTree_101.TreeNode child_right_right = new SymmetricTree_101.TreeNode(3, null, null);
+//
+//        SymmetricTree_101.TreeNode left = new SymmetricTree_101.TreeNode(2, child_left_left, child_left_right);
+//        SymmetricTree_101.TreeNode right = new SymmetricTree_101.TreeNode(2, child_right_left, child_right_right);
+//
+//        SymmetricTree_101.TreeNode root = new SymmetricTree_101.TreeNode(1, left,right);
 
-        InvertBinaryTree_226.TreeNode root = new InvertBinaryTree_226.TreeNode(4, left,right);
-        InvertBinaryTree_226 invertBinaryTree = new InvertBinaryTree_226();
-        System.out.println("****************** Invert Binary Tree ******************\n");
-        System.out.println(invertBinaryTree.invertTree(root));
+
+        SymmetricTree_101.TreeNode child_left_right = new SymmetricTree_101.TreeNode(3, null, null);
+
+        SymmetricTree_101.TreeNode child_right_right = new SymmetricTree_101.TreeNode(3, null, null);
+
+        SymmetricTree_101.TreeNode left = new SymmetricTree_101.TreeNode(2, null, child_left_right);
+        SymmetricTree_101.TreeNode right = new SymmetricTree_101.TreeNode(2, null, child_right_right);
+
+        SymmetricTree_101.TreeNode root = new SymmetricTree_101.TreeNode(1, left,right);
+
+        SymmetricTree_101 symmetricTree = new SymmetricTree_101();
+        System.out.println("****************** Symmetric Tree  ******************\n");
+        System.out.println(symmetricTree.isSymmetric(root));
 
 
     }
