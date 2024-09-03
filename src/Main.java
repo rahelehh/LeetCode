@@ -377,12 +377,20 @@ public class Main {
 //        System.out.println(symmetricTree.isSymmetric(root));
 
 
-        //***************** Construct Binary Tree from Preorder and InorderTraversal *****************
-        int[] preorder = {3, 9, 20, 15, 7};
+        //***************** Construct Binary Tree from Preorder and Inorder Traversal *****************
+//        int[] preorder = {3, 9, 20, 15, 7};
+//        int[] inorder = {9, 3, 15, 20, 7};
+//        ConstructBinaryTreeFromPreorderAndInorderTraversal_105 binaryTreeFromPreorderAndInorderTraversal = new ConstructBinaryTreeFromPreorderAndInorderTraversal_105();
+//        System.out.println("****************** Construct Binary Tree from Preorder and InorderTraversal ******************\n");
+//        System.out.println(binaryTreeFromPreorderAndInorderTraversal.buildTree(preorder, inorder));
+
+
+        //***************** Construct Binary Tree from Inorder and postorder Traversal *****************
         int[] inorder = {9, 3, 15, 20, 7};
-        ConstructBinaryTreeFromPreorderAndInorderTraversal_105 binaryTreeFromPreorderAndInorderTraversal = new ConstructBinaryTreeFromPreorderAndInorderTraversal_105();
-        System.out.println("****************** Construct Binary Tree from Preorder and InorderTraversal ******************\n");
-        System.out.println(binaryTreeFromPreorderAndInorderTraversal.buildTree(preorder, inorder));
+        int[] postorder = {9, 15, 7, 20, 3};
+        ConstructBinaryTreeFromInorderAndPostorderTraversal_106 binaryTreeFromInorderAndPostorderTraversal = new ConstructBinaryTreeFromInorderAndPostorderTraversal_106();
+        System.out.println("****************** Construct Binary Tree from Inorder and postorder Traversal ******************\n");
+        System.out.println(binaryTreeFromInorderAndPostorderTraversal.buildTree(inorder, postorder));
 
 
     }
