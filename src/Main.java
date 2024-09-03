@@ -1,8 +1,5 @@
 import arrays.*;
-import binarytree.InvertBinaryTree_226;
-import binarytree.MaximumDepthOfBinaryTree_104;
-import binarytree.SameTree_100;
-import binarytree.SymmetricTree_101;
+import binarytree.*;
 import hashmap.*;
 import intervals.SummaryRanges_228;
 import linklist.MergeTwoSortedList_21;
@@ -337,7 +334,6 @@ public class Main {
 //        System.out.println(sameTree.isSameTree_DFS(p, q));
 
 
-
         //********************************** Invert Binary Tree **********************************
 //        InvertBinaryTree_226.TreeNode child_left_left = new InvertBinaryTree_226.TreeNode(1, null, null);
 //        InvertBinaryTree_226.TreeNode child_left_right = new InvertBinaryTree_226.TreeNode(3, null, null);
@@ -367,18 +363,26 @@ public class Main {
 //        SymmetricTree_101.TreeNode root = new SymmetricTree_101.TreeNode(1, left,right);
 
 
-        SymmetricTree_101.TreeNode child_left_right = new SymmetricTree_101.TreeNode(3, null, null);
+//        SymmetricTree_101.TreeNode child_left_right = new SymmetricTree_101.TreeNode(3, null, null);
+//
+//        SymmetricTree_101.TreeNode child_right_right = new SymmetricTree_101.TreeNode(3, null, null);
+//
+//        SymmetricTree_101.TreeNode left = new SymmetricTree_101.TreeNode(2, null, child_left_right);
+//        SymmetricTree_101.TreeNode right = new SymmetricTree_101.TreeNode(2, null, child_right_right);
+//
+//        SymmetricTree_101.TreeNode root = new SymmetricTree_101.TreeNode(1, left,right);
+//
+//        SymmetricTree_101 symmetricTree = new SymmetricTree_101();
+//        System.out.println("****************** Symmetric Tree  ******************\n");
+//        System.out.println(symmetricTree.isSymmetric(root));
 
-        SymmetricTree_101.TreeNode child_right_right = new SymmetricTree_101.TreeNode(3, null, null);
 
-        SymmetricTree_101.TreeNode left = new SymmetricTree_101.TreeNode(2, null, child_left_right);
-        SymmetricTree_101.TreeNode right = new SymmetricTree_101.TreeNode(2, null, child_right_right);
-
-        SymmetricTree_101.TreeNode root = new SymmetricTree_101.TreeNode(1, left,right);
-
-        SymmetricTree_101 symmetricTree = new SymmetricTree_101();
-        System.out.println("****************** Symmetric Tree  ******************\n");
-        System.out.println(symmetricTree.isSymmetric(root));
+        //***************** Construct Binary Tree from Preorder and InorderTraversal *****************
+        int[] preorder = {3, 9, 20, 15, 7};
+        int[] inorder = {9, 3, 15, 20, 7};
+        ConstructBinaryTreeFromPreorderAndInorderTraversal_105 binaryTreeFromPreorderAndInorderTraversal = new ConstructBinaryTreeFromPreorderAndInorderTraversal_105();
+        System.out.println("****************** Construct Binary Tree from Preorder and InorderTraversal ******************\n");
+        System.out.println(binaryTreeFromPreorderAndInorderTraversal.buildTree(preorder, inorder));
 
 
     }
