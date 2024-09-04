@@ -417,22 +417,38 @@ public class Main {
 
 
         //********************************** Path Sum **********************************
-        PathSum_112.TreeNode child_left_left_left = new PathSum_112.TreeNode(7, null, null);
-        PathSum_112.TreeNode child_left_left_right = new PathSum_112.TreeNode(2, null, null);
-        PathSum_112.TreeNode child_left_left = new PathSum_112.TreeNode(11, child_left_left_left, child_left_left_right);
+//        PathSum_112.TreeNode child_left_left_left = new PathSum_112.TreeNode(7, null, null);
+//        PathSum_112.TreeNode child_left_left_right = new PathSum_112.TreeNode(2, null, null);
+//        PathSum_112.TreeNode child_left_left = new PathSum_112.TreeNode(11, child_left_left_left, child_left_left_right);
+//
+//        PathSum_112.TreeNode child_right_right_right = new PathSum_112.TreeNode(1, null, null);
+//        PathSum_112.TreeNode child_right_left = new PathSum_112.TreeNode(13, null, null);
+//        PathSum_112.TreeNode child_right_right = new PathSum_112.TreeNode(4, null, child_right_right_right);
+//
+//        PathSum_112.TreeNode left = new PathSum_112.TreeNode(4, child_left_left, null);
+//        PathSum_112.TreeNode right = new PathSum_112.TreeNode(8, child_right_left, child_right_right);
+//
+//        PathSum_112.TreeNode root = new PathSum_112.TreeNode(5, left,right);
+//
+//        PathSum_112 symmetricTree = new PathSum_112();
+//        System.out.println("****************** Path Sum  ******************\n");
+//        System.out.println(symmetricTree.hasPathSum_DFS(root,22));
 
-        PathSum_112.TreeNode child_right_right_right = new PathSum_112.TreeNode(1, null, null);
-        PathSum_112.TreeNode child_right_left = new PathSum_112.TreeNode(13, null, null);
-        PathSum_112.TreeNode child_right_right = new PathSum_112.TreeNode(4, null, child_right_right_right);
 
-        PathSum_112.TreeNode left = new PathSum_112.TreeNode(4, child_left_left, null);
-        PathSum_112.TreeNode right = new PathSum_112.TreeNode(8, child_right_left, child_right_right);
+        //********************************** Count Complete Tree Nodes **********************************
+        CountCompleteTreeNodes_222.TreeNode child_left_left = new CountCompleteTreeNodes_222.TreeNode(4, null, null);
+        CountCompleteTreeNodes_222.TreeNode child_left_right = new CountCompleteTreeNodes_222.TreeNode(5, null, null);
+        CountCompleteTreeNodes_222.TreeNode child_right_left = new CountCompleteTreeNodes_222.TreeNode(6, null, null);
 
-        PathSum_112.TreeNode root = new PathSum_112.TreeNode(5, left,right);
+        CountCompleteTreeNodes_222.TreeNode left = new CountCompleteTreeNodes_222.TreeNode(2, child_left_left, child_left_right);
+        CountCompleteTreeNodes_222.TreeNode right = new CountCompleteTreeNodes_222.TreeNode(3, child_right_left, null);
 
-        PathSum_112 symmetricTree = new PathSum_112();
-        System.out.println("****************** Path Sum  ******************\n");
-        System.out.println(symmetricTree.hasPathSum_DFS(root,22));
+        CountCompleteTreeNodes_222.TreeNode root = new CountCompleteTreeNodes_222.TreeNode(1, left,right);
+
+        CountCompleteTreeNodes_222 symmetricTree = new CountCompleteTreeNodes_222();
+        System.out.println("****************** Count Complete Tree Nodes ******************\n");
+        System.out.println(symmetricTree.countNodes(root));
+
 
 
     }
