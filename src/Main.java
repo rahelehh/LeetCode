@@ -4,6 +4,7 @@ import hashmap.*;
 import intervals.SummaryRanges_228;
 import linklist.MergeTwoSortedList_21;
 import linklist.MergeTwoSortedList_21.*;
+import org.w3c.dom.Node;
 import org.w3c.dom.css.CSSMediaRule;
 
 import java.security.KeyPair;
@@ -386,11 +387,52 @@ public class Main {
 
 
         //***************** Construct Binary Tree from Inorder and postorder Traversal *****************
-        int[] inorder = {9, 3, 15, 20, 7};
-        int[] postorder = {9, 15, 7, 20, 3};
-        ConstructBinaryTreeFromInorderAndPostorderTraversal_106 binaryTreeFromInorderAndPostorderTraversal = new ConstructBinaryTreeFromInorderAndPostorderTraversal_106();
-        System.out.println("****************** Construct Binary Tree from Inorder and postorder Traversal ******************\n");
-        System.out.println(binaryTreeFromInorderAndPostorderTraversal.buildTree(inorder, postorder));
+//        int[] inorder = {9, 3, 15, 20, 7};
+//        int[] postorder = {9, 15, 7, 20, 3};
+//        ConstructBinaryTreeFromInorderAndPostorderTraversal_106 binaryTreeFromInorderAndPostorderTraversal = new ConstructBinaryTreeFromInorderAndPostorderTraversal_106();
+//        System.out.println("****************** Construct Binary Tree from Inorder and postorder Traversal ******************\n");
+//        System.out.println(binaryTreeFromInorderAndPostorderTraversal.buildTree(inorder, postorder));
+
+
+        //***************** Populating Next Right Pointers in Each Node II *****************
+//        Object[] node_items = {1, 2, 3, 4, 5, null, 7};
+//
+//        PopulatingNextRightPointersInEachNodeII_117.Node child_right_left = new PopulatingNextRightPointersInEachNodeII_117.Node(-1, null, null, null);
+//        PopulatingNextRightPointersInEachNodeII_117.Node child_right_right = new PopulatingNextRightPointersInEachNodeII_117.Node(7, null, null, child_right_left);
+//        PopulatingNextRightPointersInEachNodeII_117.Node child_left_right = new PopulatingNextRightPointersInEachNodeII_117.Node(5, null, null, child_right_right);
+//        PopulatingNextRightPointersInEachNodeII_117.Node child_left_left = new PopulatingNextRightPointersInEachNodeII_117.Node(4, null, null, child_left_right);
+//
+//
+//        PopulatingNextRightPointersInEachNodeII_117.Node right = new PopulatingNextRightPointersInEachNodeII_117.Node(3, child_right_left, child_right_right, null);
+//        PopulatingNextRightPointersInEachNodeII_117.Node left = new PopulatingNextRightPointersInEachNodeII_117.Node(2, child_left_left, child_left_right, right);
+//
+//        PopulatingNextRightPointersInEachNodeII_117.Node root = new PopulatingNextRightPointersInEachNodeII_117.Node(1, left, right, null);
+//
+//
+//        PopulatingNextRightPointersInEachNodeII_117.Node node = new PopulatingNextRightPointersInEachNodeII_117.Node();
+//        PopulatingNextRightPointersInEachNodeII_117 populatingNextRightPointersInEachNodeII = new PopulatingNextRightPointersInEachNodeII_117();
+//        System.out.println("****************** Populating Next Right Pointers in Each Node II ******************\n");
+//        System.out.println(populatingNextRightPointersInEachNodeII.connect(node));
+
+
+
+        //********************************** Path Sum **********************************
+        PathSum_112.TreeNode child_left_left_left = new PathSum_112.TreeNode(7, null, null);
+        PathSum_112.TreeNode child_left_left_right = new PathSum_112.TreeNode(2, null, null);
+        PathSum_112.TreeNode child_left_left = new PathSum_112.TreeNode(11, child_left_left_left, child_left_left_right);
+
+        PathSum_112.TreeNode child_right_right_right = new PathSum_112.TreeNode(1, null, null);
+        PathSum_112.TreeNode child_right_left = new PathSum_112.TreeNode(13, null, null);
+        PathSum_112.TreeNode child_right_right = new PathSum_112.TreeNode(4, null, child_right_right_right);
+
+        PathSum_112.TreeNode left = new PathSum_112.TreeNode(4, child_left_left, null);
+        PathSum_112.TreeNode right = new PathSum_112.TreeNode(8, child_right_left, child_right_right);
+
+        PathSum_112.TreeNode root = new PathSum_112.TreeNode(5, left,right);
+
+        PathSum_112 symmetricTree = new PathSum_112();
+        System.out.println("****************** Path Sum  ******************\n");
+        System.out.println(symmetricTree.hasPathSum_DFS(root,22));
 
 
     }
