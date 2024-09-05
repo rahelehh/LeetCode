@@ -4,6 +4,7 @@ import hashmap.*;
 import intervals.SummaryRanges_228;
 import linklist.MergeTwoSortedList_21;
 import linklist.MergeTwoSortedList_21.*;
+import math.PalindromeNumber_9;
 import org.w3c.dom.Node;
 import org.w3c.dom.css.CSSMediaRule;
 
@@ -436,18 +437,25 @@ public class Main {
 
 
         //********************************** Count Complete Tree Nodes **********************************
-        CountCompleteTreeNodes_222.TreeNode child_left_left = new CountCompleteTreeNodes_222.TreeNode(4, null, null);
-        CountCompleteTreeNodes_222.TreeNode child_left_right = new CountCompleteTreeNodes_222.TreeNode(5, null, null);
-        CountCompleteTreeNodes_222.TreeNode child_right_left = new CountCompleteTreeNodes_222.TreeNode(6, null, null);
+//        CountCompleteTreeNodes_222.TreeNode child_left_left = new CountCompleteTreeNodes_222.TreeNode(4, null, null);
+//        CountCompleteTreeNodes_222.TreeNode child_left_right = new CountCompleteTreeNodes_222.TreeNode(5, null, null);
+//        CountCompleteTreeNodes_222.TreeNode child_right_left = new CountCompleteTreeNodes_222.TreeNode(6, null, null);
+//
+//        CountCompleteTreeNodes_222.TreeNode left = new CountCompleteTreeNodes_222.TreeNode(2, child_left_left, child_left_right);
+//        CountCompleteTreeNodes_222.TreeNode right = new CountCompleteTreeNodes_222.TreeNode(3, child_right_left, null);
+//
+//        CountCompleteTreeNodes_222.TreeNode root = new CountCompleteTreeNodes_222.TreeNode(1, left,right);
+//
+//        CountCompleteTreeNodes_222 symmetricTree = new CountCompleteTreeNodes_222();
+//        System.out.println("****************** Count Complete Tree Nodes ******************\n");
+//        System.out.println(symmetricTree.countNodes(root));
 
-        CountCompleteTreeNodes_222.TreeNode left = new CountCompleteTreeNodes_222.TreeNode(2, child_left_left, child_left_right);
-        CountCompleteTreeNodes_222.TreeNode right = new CountCompleteTreeNodes_222.TreeNode(3, child_right_left, null);
 
-        CountCompleteTreeNodes_222.TreeNode root = new CountCompleteTreeNodes_222.TreeNode(1, left,right);
-
-        CountCompleteTreeNodes_222 symmetricTree = new CountCompleteTreeNodes_222();
-        System.out.println("****************** Count Complete Tree Nodes ******************\n");
-        System.out.println(symmetricTree.countNodes(root));
+        //********************************** Palindrome Number **********************************
+        int x = 52125;
+        PalindromeNumber_9 palindromeNumber = new PalindromeNumber_9();
+        System.out.println("****************** Palindrome Number ******************\n");
+        System.out.println(palindromeNumber.isPalindrome(x));
 
 
 
