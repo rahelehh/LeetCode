@@ -5,6 +5,7 @@ import intervals.SummaryRanges_228;
 import linklist.MergeTwoSortedList_21;
 import linklist.MergeTwoSortedList_21.*;
 import math.PalindromeNumber_9;
+import math.PlusOne_66;
 import org.w3c.dom.Node;
 import org.w3c.dom.css.CSSMediaRule;
 
@@ -452,10 +453,16 @@ public class Main {
 
 
         //********************************** Palindrome Number **********************************
-        int x = 52125;
-        PalindromeNumber_9 palindromeNumber = new PalindromeNumber_9();
-        System.out.println("****************** Palindrome Number ******************\n");
-        System.out.println(palindromeNumber.isPalindrome(x));
+//        int x = 52125;
+//        PalindromeNumber_9 palindromeNumber = new PalindromeNumber_9();
+//        System.out.println("****************** Palindrome Number ******************\n");
+//        System.out.println(palindromeNumber.isPalindrome(x));
+
+        //********************************** Plus One **********************************
+        int[] digits = {1,2,3};
+        PlusOne_66 plusOne = new PlusOne_66();
+        System.out.println("****************** Plus One ******************\n");
+        System.out.println(plusOne.plusOne(digits));
 
 
 
