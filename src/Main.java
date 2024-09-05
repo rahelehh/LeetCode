@@ -6,6 +6,7 @@ import linklist.MergeTwoSortedList_21;
 import linklist.MergeTwoSortedList_21.*;
 import math.PalindromeNumber_9;
 import math.PlusOne_66;
+import math.Sqrt_69;
 import org.w3c.dom.Node;
 import org.w3c.dom.css.CSSMediaRule;
 
@@ -417,7 +418,6 @@ public class Main {
 //        System.out.println(populatingNextRightPointersInEachNodeII.connect(node));
 
 
-
         //********************************** Path Sum **********************************
 //        PathSum_112.TreeNode child_left_left_left = new PathSum_112.TreeNode(7, null, null);
 //        PathSum_112.TreeNode child_left_left_right = new PathSum_112.TreeNode(2, null, null);
@@ -459,12 +459,15 @@ public class Main {
 //        System.out.println(palindromeNumber.isPalindrome(x));
 
         //********************************** Plus One **********************************
-        int[] digits = {1,2,3};
-        PlusOne_66 plusOne = new PlusOne_66();
-        System.out.println("****************** Plus One ******************\n");
-        System.out.println(plusOne.plusOne(digits));
+//        int[] digits = {1,2,3};
+//        PlusOne_66 plusOne = new PlusOne_66();
+//        System.out.println("****************** Plus One ******************\n");
+//        System.out.println(plusOne.plusOne(digits));
 
-
-
+        //********************************** Sqrt(x) **********************************
+        int x = 8;
+        Sqrt_69 sqrt = new Sqrt_69();
+        System.out.println("****************** Sqrt(x) ******************\n");
+        System.out.println(sqrt.mySqrt(x));
     }
 }
